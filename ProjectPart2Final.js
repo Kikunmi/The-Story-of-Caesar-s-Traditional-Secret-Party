@@ -11,6 +11,7 @@ const alphabet = "abcdefghijklmnopqrstuvwxyz";
  * @param {number} shiftValue - The number of positions to shift each letter
  * @returns {string} - The encrypted message
  */
+
 function encrypt(message, shiftValue) {
   let encryptedMessage = ""; // Stores the final encrypted message
   let counter = 0; // Tracks how many letters have been processed (for random insertion)
@@ -54,6 +55,7 @@ function encrypt(message, shiftValue) {
  * @param {number} shiftValue - The number of positions originally used for shifting
  * @returns {string} - The decrypted (original) message
  */
+
 function decrypt(encryptedMessage, shiftValue) {
   let decryptedMessage = ""; // Stores the final decrypted message
   let counter = 0; // Tracks real letters to skip random ones
